@@ -1,16 +1,7 @@
 h1{
   text-align: center;
 }
-h2{
-  margin-left: 1100px;
-  font-size: 13px;
-  margin-top:-40px;
-}
-h3{
-  margin-left: 1170px;
-  font-size: 13px;
-  margin-top:-26px;
-}
+
 ul.menu{
   list-style-type: none;
   margin: 0px;
@@ -18,10 +9,14 @@ ul.menu{
   overflow: hidden;
   background-color:#ffcb0c;
   border-style: solid;
-  
 }
 
 
+ li.home_index{
+  float: left;
+  margin-right: -450px;
+  margin-left: 420px;
+}
 li.events_index{
   float: left;
   margin-right: -450px;
@@ -32,16 +27,17 @@ li.faci_index{
   margin-right: -450px;
   margin-left: 500px;
 }
-@media screen and (max-width: 500px) {
-  li.home_index{
-  float: left;
-  margin-right: -450px;
-  margin-left: 420px;
+
+h2.calendar_h2{
+  font-size: 30px;
+  margin-left: 80px;
 }
-  .header-right {
-    float: none;
-  }
+
+a.calendar_font{
+  color: black;
+  font-style: none;
 }
+ 
 
 li.home{
   float: left;
@@ -224,7 +220,7 @@ button.loginB {
   padding: 14px 20px;
   position: fixed;
   right: 0;
-  top: 50%;
+  top: 53%;
   width: 8em;
   margin-top: -21em;
   margin-right: 100px;
@@ -264,8 +260,8 @@ span.psw {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  left: 380px;
-  top: 100px;
+  left: 350px;
+  top: 120px;
   width: 50%; /* Full width */
   height: 50%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
@@ -352,7 +348,7 @@ button.signupB {
   padding: 14px 20px;
   position: fixed;
   right: 0;
-  top: 50%;
+  top: 53%;
   width: 8em;
   margin-top: -21em;
   margin-right: 11px;
