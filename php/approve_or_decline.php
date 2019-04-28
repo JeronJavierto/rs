@@ -28,7 +28,7 @@
 	}elseif(isset($_POST["Decline"])){
 		$decline = "DELETE FROM reservation WHERE resID = '$login_session'";
 		if (mysqli_query($conn, $decline)) {
-		    echo "Reservation declined";
+		    header("location: list_of_requests_admin.php");
 		} else {
 		    echo "Error updating record: " . mysqli_error($conn);
 		}
