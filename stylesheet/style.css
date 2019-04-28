@@ -155,8 +155,12 @@ li a.rep{
 li a:hover {
   text-decoration: underline;
 }
-li a.{
+.menu .current{
   text-decoration: underline;
+  color: black;
+  display: block;
+  text-align: center;
+   padding: 14px 16px;
 }
 /* Login Form(Pop-up)*/
 body {font-family: Arial, Helvetica, sans-serif;}
