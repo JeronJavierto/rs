@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.8.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 28, 2019 at 05:55 AM
--- Server version: 10.1.38-MariaDB
--- PHP Version: 7.3.3
+-- Generation Time: Apr 28, 2019 at 06:08 AM
+-- Server version: 10.1.37-MariaDB
+-- PHP Version: 7.3.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -49,7 +49,8 @@ INSERT INTO `accounts` (`userID`, `User_type`, `First_name`, `Last_name`, `email
 (48, 'admin', 'admin', 'admin', 'admin@email.com', 'CusOffice', '', '', 'e64b78fc3bc91bcbc7dc232ba8ec59e0'),
 (49, 'admin', 'sao', 'sao', 'sao@email.com', 'SAO', '', '', 'ca20463d8a62207fd59f0c76001e7345'),
 (50, 'admin', 'Security', 'Security', 'security@email.com', 'SecOffice', '', '', '92fe1426c7bf80b12c0c2d1dc94ff4a3'),
-(51, 'admin', 'dean', 'dean', 'dean@email.com', 'DeanOffice', '', '', '856cfd3f27aceca43a67f4f836e2aefc');
+(51, 'admin', 'dean', 'dean', 'dean@email.com', 'DeanOffice', '', '', '856cfd3f27aceca43a67f4f836e2aefc'),
+(52, 'client', 'JERK', 'ROSAL', 'JERK@EMAIL.COM', '', 'ICON', 'President', 'b104c5a72c2f3527622a5d95c6fbb9ca');
 
 -- --------------------------------------------------------
 
@@ -280,6 +281,24 @@ INSERT INTO `facility` (`FacID`, `Level`, `room`, `roomType`, `description`, `ca
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `report`
+--
+
+CREATE TABLE `report` (
+  `reportID` int(11) NOT NULL,
+  `DateOfOccurence` date NOT NULL,
+  `TimeOfOccurence` time NOT NULL,
+  `Name` varchar(50) NOT NULL,
+  `IdNo` int(7) NOT NULL,
+  `Course` varchar(50) NOT NULL,
+  `Description` varchar(255) NOT NULL,
+  `ExtentofDamage` varchar(255) NOT NULL,
+  `Action_taken` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `reservation`
 --
 
@@ -298,11 +317,14 @@ CREATE TABLE `reservation` (
 --
 
 INSERT INTO `reservation` (`resID`, `user_ID`, `title`, `Venue`, `start_event`, `end_event`, `status`) VALUES
-(45, 47, 'Monthly Mass', '', '2019-04-01 12:00:00', '2019-04-01 13:00:00', 'Pending'),
-(47, 47, 'MM Switch', '', '2019-04-09 08:00:00', '2019-04-09 11:00:00', 'Pending'),
-(49, 47, 'LF Building', '', '2019-04-11 10:00:00', '2019-04-11 14:00:00', 'Pending'),
-(51, 0, 'Ancars Motors Recruitment', '', '2019-04-04 11:00:00', '2019-04-04 13:00:00', 'Approved'),
-(54, 0, 'COL Financial Stock Summit', '', '2019-04-19 07:00:00', '2019-04-19 10:00:00', 'Approved');
+(21, 26, 'Ballers', '', '2019-04-19 00:00:00', '2019-04-20 00:00:00', 'Approved'),
+(24, 0, 'Mass', '', '2019-04-19 00:00:00', '2019-04-20 00:00:00', 'Approved'),
+(26, 25, 'No class', '', '2019-04-19 00:00:00', '2019-04-21 00:00:00', 'Approved'),
+(32, 25, 'Party', '', '2019-04-23 12:00:00', '2019-04-23 16:00:00', 'Approved'),
+(36, 47, 'Party', '', '2019-04-25 00:00:00', '2019-04-25 10:00:00', 'Approved'),
+(40, 47, 'Meeting', 'AVR', '2019-04-18 00:00:00', '2019-04-19 00:00:00', 'Pending'),
+(41, 47, 'Meeting', 'AVR', '2019-04-17 00:00:00', '2019-04-18 00:00:00', 'Pending'),
+(42, 47, 'overnight', 'Jeks', '2019-04-24 00:00:00', '2019-04-25 00:00:00', 'Pending');
 
 -- --------------------------------------------------------
 
@@ -353,6 +375,12 @@ ALTER TABLE `facility`
   ADD PRIMARY KEY (`FacID`);
 
 --
+-- Indexes for table `report`
+--
+ALTER TABLE `report`
+  ADD PRIMARY KEY (`reportID`);
+
+--
 -- Indexes for table `reservation`
 --
 ALTER TABLE `reservation`
@@ -372,7 +400,7 @@ ALTER TABLE `services`
 -- AUTO_INCREMENT for table `accounts`
 --
 ALTER TABLE `accounts`
-  MODIFY `userID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+  MODIFY `userID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- AUTO_INCREMENT for table `classroom`
@@ -393,10 +421,16 @@ ALTER TABLE `facility`
   MODIFY `FacID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=149;
 
 --
+-- AUTO_INCREMENT for table `report`
+--
+ALTER TABLE `report`
+  MODIFY `reportID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
 -- AUTO_INCREMENT for table `reservation`
 --
 ALTER TABLE `reservation`
-  MODIFY `resID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `resID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT for table `services`
