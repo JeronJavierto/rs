@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="../stylesheet/style2.css">
 <link rel="stylesheet" href="style.css">
 <h1>FACILITY RESERVATION SYSTEM</h1>
+<h3><a href="edit_profile.html" class="signup">Edit Profile</a></h3><br>
 <h3><a href="../../php/logout.php" class="signup">Log Out</a></h3>
 </head>
     <body>
@@ -22,7 +23,7 @@
     <li class="events"><a href="event_page_admin.php" class="events">EVENTS</a></li>
     <li class="faci"><a href="list_facilities_admin.php" class="faci">FACILITIES</a></li>
     <li class="req"><a href="list_of_requests_admin.php" class="req">REQUEST</a></li>
-    <li class="rep"><a href="../pages/admin/report.php" class="rep">REPORTS</a></li>
+    <li class="rep"><a class="current" href="../pages/admin/report.php" class="rep">REPORTS</a></li>
   </ul>
 
 

@@ -19,7 +19,7 @@
 		    		alert('$succ');
 		    	</script>
 		    ";
-		    header("location: list_of_requests_admin.php");
+		    header("location: request_admin.php");
 		} else {
 		    echo "Error updating record: " . mysqli_error($conn);
 		}
@@ -28,7 +28,7 @@
 	}elseif(isset($_POST["Decline"])){
 		$decline = "DELETE FROM reservation WHERE resID = '$login_session'";
 		if (mysqli_query($conn, $decline)) {
-		    header("location: list_of_requests_admin.php");
+		    echo "Reservation declined";
 		} else {
 		    echo "Error updating record: " . mysqli_error($conn);
 		}
