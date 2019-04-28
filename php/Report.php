@@ -1,86 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style> 
-    
-    div.a{
-        background-color: #00008B;
-        padding-top: 2px;
-        width: 800px;
-        padding-bottom: 2px;
-        padding-left: 2px;
-        color: floralwhite;
-    }
-    div.b{
-       background-color: white;
-       width: 643px;
-       height: 750px;
-       padding: 40px;  
-       border: 40px solid lightgrey;
-       text-align: center;
-    }
-      div.c{
-          text-align: left;
-      }
-    input[type=text], select {
-  width: 50%;
-  padding: 5px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-input[type=reserve] {
-  width: 10%;
-  background-color: Green;
-  color: white;
-  padding: 10px 10px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  
-}
-
-input[type=reserve]:hover {
-  background-color: Green;
-}
-.button {
-  background-color: #00008B;
-  border: none;
-  color: white;
-  padding: 12px 32px;
-  text-align: right;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  cursor: pointer;
-} 
-
-</style>      
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../stylesheet/style5.css">
+<link rel="stylesheet" href="../stylesheet/style.css">   
+  <title>Reports</title>
+  <h1>FACILITY RESERVATION SYSTEM</h1>
+  <h3><a href="logout.php" class="signup">Log Out</a></h3>
 </head>
     <body>
-    <div class="a">Reports</div>
-        <div class="b">
-            <div class="c">Incident Report</div>
+    
+<ul class="menu">
+      <li class="home"><a href="../pages/client/home_client.php" class="home">HOME</a></li>
+      <li class="events"><a href="event_page_client.php" class="events">EVENTS</a></li>
+      <li class="faci"><a href="list_facilities_client.php" class="faci">FACILITIES</a></li>
+      <li class="faci"><a href="Report.php" class="repo">REPORT</a></li>
+  </ul>
+        
+    <div class="abc">Reports</div>
+        <div class="bcd">
+            <div class="cde">Incident Report</div>
         <br>
 <form>
     <label for="Org">Date of Occurence</label>
-    <input type="text" id="Occur" name="date/occur" placeholder="....">
+    <input type="date" id="Occur" name="date/occur" placeholder="....">
+    <br>
     <br>
     <label for="Vent">Time of Occurence</label>
-    <input type="text" id="" time/occur="Evnt" placeholder="... ">
+    <input type="time" id="" time/occur="Evnt" placeholder="... ">
     <br>
     <h4>Causet of Incident</h4>
     <label for="Ven">Name</label>
-    <input type="text" id="n" name="nm" placeholder=".....">
+    <input type="fill" id="n" name="nm" placeholder=".....">
     <br>
     <label for="Dat">ID no.</label>
-    <input type="text" id="no" name="idno" placeholder="...... ">
+    <input type="fill" id="no" name="idno" placeholder="...... ">
     <br>
     <label for="Tim">Course</label>
-    <input type="text" id="cr" name="course" placeholder=".....">
+    <input type="fill" id="cr" name="course" placeholder=".....">
     <br>
     <h4>Description</h4>
     <textarea rows="4" cols="50" name="comment">
@@ -94,7 +51,7 @@ input[type=reserve]:hover {
     <br>
     <br>
  
-    <button class="button">Submit</button>
+    <button class="butt">Submit</button>
         
 </form>
 

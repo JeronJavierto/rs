@@ -8,7 +8,6 @@
   <title>Events</title>
   <link rel="stylesheet" href="../stylesheet/style.css">
   <h1>FACILITY RESERVATION SYSTEM</h1>
-  <h3><a href="edit_profile.php" class="signup">Edit Profile</a></h3><br>
   <h3><a href="logout.php" class="signup">Log Out</a></h3>
 </head>
 <body>    
@@ -17,7 +16,7 @@
     <li class="home"><a href="../pages/client/home_client.php" class="home">HOME</a></li>
     <li class="events"><a href="event_page_client.php" class="events">EVENTS</a></li>
     <li class="faci"><a href="list_facilities_client.php" class="faci">FACILITIES</a></li>
-    <li class="faci_index"><a href="report.php" class="faci">REPORT</a></li>
+    <li class="faci"><a href="report.php" class="faci">REPORT</a></li>
   </ul>
 
   <table id="customers">
