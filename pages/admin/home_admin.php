@@ -14,7 +14,7 @@
 <body>
 
 	<ul class="menu">
-		<li class="home"><a href="home_admin.php" class="home">HOME</a></li>
+		<li class="home"><a class="current" href="home_admin.php" class="home">HOME</a></li>
 		<li class="events"><a href="../../php/event_page_admin.php" class="events">EVENTS</a></li>
 		<li class="faci"><a href="../../php/list_facilities_admin.php" class="faci">FACILITIES</a></li>
 		<li class="req"><a href="../../php/list_of_requests_admin.php" class="req">REQUEST</a></li>
