@@ -21,17 +21,17 @@
         <div class="bcd">
             <div class="cde">Incident Report</div>
         <br>
-<form>
+<form action="report_client.php" method="POST">
     <label for="Org">Date of Occurence</label>
     <input type="date" id="Occur" name="date/occur" placeholder="....">
     <br>
     <br>
     <label for="Vent">Time of Occurence</label>
-    <input type="time" id="" time/occur="Evnt" placeholder="... ">
+    <input type="time" id="" name="time" placeholder="... ">
     <br>
     <h4>Causet of Incident</h4>
     <label for="Ven">Name</label>
-    <input type="fill" id="n" name="nm" placeholder=".....">
+    <input type="fill" id="n" name="name" placeholder=".....">
     <br>
     <label for="Dat">ID no.</label>
     <input type="fill" id="no" name="idno" placeholder="...... ">
@@ -40,18 +40,18 @@
     <input type="fill" id="cr" name="course" placeholder=".....">
     <br>
     <h4>Description</h4>
-    <textarea rows="4" cols="50" name="comment">
+    <textarea rows="4" cols="50" name="description">
 </textarea>
     <h4>Extent of Damage</h4>
-    <textarea rows="4" cols="50" name="comment">
+    <textarea rows="4" cols="50" name="damage">
 </textarea>
     <h4>Action Taken</h4>
-    <textarea rows="4" cols="50" name="comment">
+    <textarea rows="4" cols="50" name="actaken">
 </textarea>
     <br>
     <br>
  
-    <button class="butt">Submit</button>
+    <button type="submit" class="butt">Submit</button>
         
 </form>
 

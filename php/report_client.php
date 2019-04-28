@@ -1,7 +1,7 @@
 <?php
 include('DBConnector.php');
 
-$dateoccur = mysqli_real_escape_string($conn, $_REQUEST['date']);
+$dateoccur = mysqli_real_escape_string($conn, $_REQUEST['date/occur']);
 $timeoccur = mysqli_real_escape_string($conn, $_REQUEST['time']);
 $name = mysqli_real_escape_string($conn, $_REQUEST['name']);
 $idno = mysqli_real_escape_string($conn, $_REQUEST['idno']);
@@ -14,6 +14,12 @@ $actaken = mysqli_real_escape_string($conn, $_REQUEST['actaken']);
 $insertQuery = "INSERT INTO report (DateOfOccurence, TimeOfOccurence, Name, IdNo, Course, Description, ExtentofDamage, Action_taken) VALUES ('$dateoccur', '$timeoccur', '$name', '$idno', '$course', '$description', '$damage', '$actaken')";
 
 if ($conn->query($insertQuery) === TRUE) {
+	echo 
+		"<script>
+			alert('DOne');
+		</script>
+		";
+		include("report.php");
 	} else {
 	    echo "Error: " . $insertQuery . "<br>" . $conn->error;
 	}
