@@ -26,7 +26,7 @@
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="addfB">Add Facility</button>
 
 <div id="id01" class="addfmodal">
-  <form class="addfmodal-content animate" action="php/login.php" method="POST">
+  <form class="addfmodal-content animate" action="add_facility.php" method="POST">
     <div class="imgcontainer1">
       <span onclick="document.getElementById('id01').style.display='none'" class="close_addf" title="Close Modal">&times;</span>
     </div>
