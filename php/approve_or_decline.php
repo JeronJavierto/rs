@@ -19,7 +19,7 @@
 		    		alert('$succ');
 		    	</script>
 		    ";
-		    header("location: request_admin.php");
+		    header("location: list_of_requests_admin.php");
 		} else {
 		    echo "Error updating record: " . mysqli_error($conn);
 		}
