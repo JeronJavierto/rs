@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 28, 2019 at 08:35 AM
--- Server version: 10.1.37-MariaDB
--- PHP Version: 7.2.12
+-- Generation Time: Apr 28, 2019 at 09:07 AM
+-- Server version: 10.1.38-MariaDB
+-- PHP Version: 7.3.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -325,11 +325,12 @@ CREATE TABLE `reservation` (
 --
 
 INSERT INTO `reservation` (`resID`, `user_ID`, `title`, `Venue`, `start_event`, `end_event`, `status`) VALUES
-(45, 47, 'Monthly Mass', '', '2019-04-01 12:00:00', '2019-04-01 13:00:00', 'Pending'),
-(47, 47, 'MM Switch', '', '2019-04-09 08:00:00', '2019-04-09 11:00:00', 'Pending'),
-(49, 47, 'LF Building', '', '2019-04-11 10:00:00', '2019-04-11 14:00:00', 'Pending'),
-(51, 0, 'Ancars Motors Recruitment', '', '2019-04-04 11:00:00', '2019-04-04 13:00:00', 'Approved'),
-(54, 0, 'COL Financial Stock Summit', '', '2019-04-19 07:00:00', '2019-04-19 10:00:00', 'Approved');
+(45, 47, 'Monthly Mass', 'Devesse AVR', '2019-04-01 12:00:00', '2019-04-01 13:00:00', 'Pending'),
+(47, 47, 'MM Switch', 'D222', '2019-04-09 08:00:00', '2019-04-09 11:00:00', 'Pending'),
+(49, 47, 'LF Building', 'D912', '2019-04-11 10:00:00', '2019-04-11 14:00:00', 'Pending'),
+(51, 0, 'Ancars Motors Recruitment', 'Plaza', '2019-04-04 11:00:00', '2019-04-04 13:00:00', 'Approved'),
+(54, 0, 'COL Financial Stock Summit', 'Devesse AVR', '2019-04-19 07:00:00', '2019-04-19 10:00:00', 'Approved'),
+(55, 47, 'BSIT Seminar', 'Devesse AVR', '2019-04-23 00:00:00', '2019-04-24 00:00:00', 'Approved');
 
 -- --------------------------------------------------------
 
@@ -435,7 +436,7 @@ ALTER TABLE `report`
 -- AUTO_INCREMENT for table `reservation`
 --
 ALTER TABLE `reservation`
-  MODIFY `resID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `resID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- AUTO_INCREMENT for table `services`
