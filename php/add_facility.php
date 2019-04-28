@@ -8,9 +8,9 @@
 	$capacity = mysqli_real_escape_string($conn, $_REQUEST['capacity']);
 
 	$insertFacility = "INSERT INTO facility (Level, room, roomType, description, capacity) VALUES ('$level', '$room', '$type', '$description', '$capacity')";
-
+	
 	if (mysqli_query($conn, $insertFacility)) {
-		# code...			
+		header("location: list_facilities_admin.php");
 	}else{
 		echo (mysqli_connect_error());
 	}
