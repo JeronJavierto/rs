@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 27, 2019 at 08:02 AM
+-- Generation Time: Apr 28, 2019 at 05:55 AM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.3
 
@@ -298,14 +298,11 @@ CREATE TABLE `reservation` (
 --
 
 INSERT INTO `reservation` (`resID`, `user_ID`, `title`, `Venue`, `start_event`, `end_event`, `status`) VALUES
-(21, 26, 'Ballers', '', '2019-04-19 00:00:00', '2019-04-20 00:00:00', 'Approved'),
-(24, 0, 'Mass', '', '2019-04-19 00:00:00', '2019-04-20 00:00:00', 'Approved'),
-(26, 25, 'No class', '', '2019-04-19 00:00:00', '2019-04-21 00:00:00', 'Approved'),
-(32, 25, 'Party', '', '2019-04-23 12:00:00', '2019-04-23 16:00:00', 'Approved'),
-(36, 47, 'Party', '', '2019-04-25 00:00:00', '2019-04-25 10:00:00', 'Approved'),
-(40, 47, 'Meeting', 'AVR', '2019-04-18 00:00:00', '2019-04-19 00:00:00', 'Pending'),
-(41, 47, 'Meeting', 'AVR', '2019-04-17 00:00:00', '2019-04-18 00:00:00', 'Pending'),
-(42, 47, 'overnight', 'Jeks', '2019-04-24 00:00:00', '2019-04-25 00:00:00', 'Pending');
+(45, 47, 'Monthly Mass', '', '2019-04-01 12:00:00', '2019-04-01 13:00:00', 'Pending'),
+(47, 47, 'MM Switch', '', '2019-04-09 08:00:00', '2019-04-09 11:00:00', 'Pending'),
+(49, 47, 'LF Building', '', '2019-04-11 10:00:00', '2019-04-11 14:00:00', 'Pending'),
+(51, 0, 'Ancars Motors Recruitment', '', '2019-04-04 11:00:00', '2019-04-04 13:00:00', 'Approved'),
+(54, 0, 'COL Financial Stock Summit', '', '2019-04-19 07:00:00', '2019-04-19 10:00:00', 'Approved');
 
 -- --------------------------------------------------------
 
@@ -399,7 +396,7 @@ ALTER TABLE `facility`
 -- AUTO_INCREMENT for table `reservation`
 --
 ALTER TABLE `reservation`
-  MODIFY `resID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `resID` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 
 --
 -- AUTO_INCREMENT for table `services`
