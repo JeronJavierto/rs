@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../../stylesheet/style.css">	
 	<h1>FACILITY RESERVATION SYSTEM</h1>
-	<h3><a href="edit_profile.html" class="signup">Edit Profile</a></h3><br>
 	<h3><a href="../../php/logout.php" class="signup">Log Out</a></h3>
 </head>
 <body>
