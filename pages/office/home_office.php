@@ -10,7 +10,7 @@
 </head>
 <body>
 	<ul class="menu">
-		<li class="home"><a href="home_office.php" class="home">HOME</a></li>
+		<li class="home"><a class="current" href="home_office.php" class="home">HOME</a></li>
 		<li class="events"><a href="../../php/event_page_office.php" class="events">EVENTS</a></li>
 		<li class="faci"><a href="../../php/list_facilities_office.php" class="faci">FACILITIES</a></li>
 		<li class="req"><a href="../../php/list_of_requests_office.php" class="req">REQUEST</a></li>
