@@ -1,6 +1,11 @@
 h1{
   text-align: center;
 }
+h3{
+  margin-left: 1170px;
+  font-size: 13px;
+  margin-top:-26px;
+}
 
 ul.menu{
   list-style-type: none;
@@ -143,6 +148,9 @@ li a.rep{
 
 }
 li a:hover {
+  text-decoration: underline;
+}
+li a.{
   text-decoration: underline;
 }
 /* Login Form(Pop-up)*/
