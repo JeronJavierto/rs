@@ -14,7 +14,7 @@
   
   <ul class="menu">
     <li class="home"><a href="../pages/office/home_office.php" class="home">HOME</a></li>
-    <li class="events"><a href="event_page_office.php" class="events">EVENTS</a></li>
+    <li class="events"><a class="current" href="event_page_office.php" class="events">EVENTS</a></li>
     <li class="faci"><a href="list_facilities_office.php" class="faci">FACILITIES</a></li>    
     <li class="req"><a href="list_of_requests_office.php" class="req">REQUEST</a></li>    
   </ul>
