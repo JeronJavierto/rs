@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.4
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 28, 2019 at 06:44 AM
+-- Generation Time: Apr 28, 2019 at 08:35 AM
 -- Server version: 10.1.37-MariaDB
--- PHP Version: 7.3.1
+-- PHP Version: 7.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -301,10 +301,8 @@ CREATE TABLE `report` (
 --
 
 INSERT INTO `report` (`reportID`, `DateOfOccurence`, `TimeOfOccurence`, `Name`, `IdNo`, `Course`, `Description`, `ExtentofDamage`, `Action_taken`) VALUES
-(14, '2019-02-02', '14:02:00', '2', 2, '2', '2', '2', '2'),
-(15, '2019-02-02', '14:02:00', '2', 2, '2', '2', '2', '2'),
-(16, '2017-03-03', '15:03:00', '3', 3, '3', '3', '3', '3'),
-(17, '2019-02-02', '14:02:00', '2', 2, '2', '2', '2', '2');
+(18, '2019-04-04', '11:23:00', 'Lester De Guzman', 2168659, 'BSIT - 4', 'Broken chair', 'minimal damage', 'remove the chair '),
+(19, '2019-04-19', '09:12:00', 'Destine Aldana', 2164186, 'BSIT - 4', 'Broken microphone', 'minimal damage', 'replaced the microphone');
 
 -- --------------------------------------------------------
 
@@ -431,7 +429,7 @@ ALTER TABLE `facility`
 -- AUTO_INCREMENT for table `report`
 --
 ALTER TABLE `report`
-  MODIFY `reportID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `reportID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `reservation`
