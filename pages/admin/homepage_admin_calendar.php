@@ -31,14 +31,16 @@
     select: function(start, end, allDay)
     {
      var title = prompt("Enter Event Title");
-     if(title)
+     var facility = prompt("Facility");     
+
+     if(title && facility)
      {
-      var start = $.fullCalendar.formatDate(start, "Y-MM-DD HH:mm:ss");
-      var end = $.fullCalendar.formatDate(end, "Y-MM-DD HH:mm:ss");
+      var start = $.fullCalendar.formatDate(start, "Y-MM-DD HH:mm");
+      var end = $.fullCalendar.formatDate(end, "Y-MM-DD HH:mm");
       $.ajax({
        url:"insert_calendar.php",
        type:"POST",
-       data:{title:title, start:start, end:end},
+       data:{title:title, facility:facility, start:start, end:end},
        success:function()
        {
         calendar.fullCalendar('refetchEvents');
@@ -50,8 +52,8 @@
     editable:true,
     eventResize:function(event)
     {
-     var start = $.fullCalendar.formatDate(event.start, "Y-MM-DD HH:mm:ss");
-     var end = $.fullCalendar.formatDate(event.end, "Y-MM-DD HH:mm:ss");
+     var start = $.fullCalendar.formatDate(event.start, "Y-MM-DD HH:mm");
+     var end = $.fullCalendar.formatDate(event.end, "Y-MM-DD HH:mm");
      var title = event.title;
      var id = event.id;
      $.ajax({
@@ -85,7 +87,7 @@
 
     eventClick:function(event)
     {
-     if(confirm("Are you sure you want to remove it?"))
+     if(confirm("Are you sure you want to cancel?"))
      {
       var id = event.id;
       $.ajax({
@@ -100,6 +102,8 @@
       })
      }
     },
+
+
 
    });
   });
