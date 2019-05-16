@@ -72,7 +72,7 @@
 	</div>
 
 		<ul class="menu">
-		<li class="home"><a href="../index.html" class="home">HOME</a></li>
+		<li class="home"><a href="../index.php" class="home">HOME</a></li>
 		<li class="events"><a href="event_page.php" class="events">EVENTS</a></li>
 		<li class="faci"><a href="list_facilities.php" class="faci">FACILITIES</a></li>
 	</ul>

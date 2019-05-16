@@ -22,16 +22,16 @@ $officeArray = array("SSD", "Student Affairs Office", "Security Office");
 	if($result=mysqli_query($conn,$email2)){
 
 		if(mysqli_num_rows($result)>0){
-			// header("location: ../index.html");
+			// header("location: ../index.php");
 			echo "<script type='text/javascript'>alert('$message');
-				window.location.href='../index.html';
+				window.location.href='../index.php';
 			</script>";
 
 
 
 		}elseif ($password != $ConPassword){			
 			echo "<script type='text/javascript'>window.alert('Passwords do not match');
-				window.location.href='../index.html';
+				window.location.href='../index.php';
 			</script>";
 			
 				

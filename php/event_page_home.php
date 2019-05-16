@@ -10,7 +10,7 @@
 
 <body>
   <ul class="menu"> 
-    <li class="home_index"><a href="../index.html" class="home">HOME</a></li>
+    <li class="home_index"><a href="../index.php" class="home">HOME</a></li>
     <li class="events_index"><a class="current" href="event_page_home.php" class="events">EVENTS</a></li>
     <li class="faci_index"><a href="list_facilities_home.php" class="faci">FACILITIES</a></li>
   </ul>
