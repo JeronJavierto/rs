@@ -20,7 +20,7 @@
   <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;" class="signupB">SIGN UP</button>
 
   <div id="id01" class="loginmodal">
-  <form class="modal-content animate" action="php/login.php" method="POST">
+  <form class="modal-content animate" action="php/login.php" method="POST" autocomplete="off">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close_signin" title="Close Modal">&times;</span>
     </div>
@@ -41,7 +41,7 @@
 <div id="id02" class="modal_signup">
       <span onclick="document.getElementById('id02').style.display='none'" class="close_s" title="Close">&times;</span>   
     
-<form class="modal-content-signup" action="php/signup.php" method="POST">
+<form class="modal-content-signup" action="php/signup.php" method="POST" autocomplete="off">
     <div class="container_signup">
       <p>Sign Up</p>
       <div class="signup-body">
@@ -58,7 +58,7 @@
 <!-- client sign up -->
       <div id="id03" class="modal_signup">
       		<span onclick="document.getElementById('id03').style.display='none'" class="close_s" title="Close">&times;</span>
-      	<form class="modal-content-signup" action="php/signup_client.php" method="POST">
+      	<form class="modal-content-signup" action="php/signup_client.php" method="POST" autocomplete="off">
       		<div class="container_signup">
       		<p>Please fill in this form to create an account.</p>
       		<hr>
@@ -94,12 +94,12 @@
 <!-- admin sign up -->
       <div id="id04" class="modal_signup">
       		<span onclick="document.getElementById('id04').style.display='none'" class="close_s" title="Close">&times;</span>
-      	<form class="modal-content-signup" action="php/signup_admin.php" method="POST">
+      	<form class="modal-content-signup" action="php/signup_admin.php" method="POST" autocomplete="off">
       		<div class="container_signup">
       		<p>Please fill in this form to create an account.</p>
       		<hr>
       <label for="frstn">First Name</label>
-      <input type="text" placeholder="Enter First Name" name="admin_FName" required>
+      <input type="text" placeholder="Enter First Name" name="admin_FName" required autocomplete="off">
 
       <label for="lstn">Last Name</label>
       <input type="text" placeholder="Enter Last Name" name="admin_LName">
