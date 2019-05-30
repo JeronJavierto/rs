@@ -23,30 +23,30 @@
         <br>
 <form action="report_client.php" method="POST">
     <label for="Org">Date of Occurence</label>
-    <input type="date" id="Occur" name="date/occur" placeholder="....">
+    <input type="date" id="Occur" name="date/occur" placeholder="...." required="">
     <br>
     <br>
     <label for="Vent">Time of Occurence</label>
-    <input type="time" id="" name="time" placeholder="... ">
+    <input type="time" id="" name="time" placeholder="... " required="">
     <br>
     <h4>Causet of Incident</h4>
     <label for="Ven">Name</label>
-    <input type="fill" id="n" name="name" placeholder=".....">
+    <input type="fill" id="n" name="name" placeholder="....." required="">
     <br>
     <label for="Dat">ID no.</label>
-    <input type="fill" id="no" name="idno" placeholder="...... ">
+    <input type="fill" id="no" name="idno" placeholder="...... " required="">
     <br>
     <label for="Tim">Course</label>
-    <input type="fill" id="cr" name="course" placeholder=".....">
+    <input type="fill" id="cr" name="course" placeholder="....." required="">
     <br>
     <h4>Description</h4>
-    <textarea rows="4" cols="50" name="description">
+    <textarea rows="4" cols="50" name="description" required="">
 </textarea>
     <h4>Extent of Damage</h4>
-    <textarea rows="4" cols="50" name="damage">
+    <textarea rows="4" cols="50" name="damage" required="">
 </textarea>
     <h4>Action Taken</h4>
-    <textarea rows="4" cols="50" name="actaken">
+    <textarea rows="4" cols="50" name="actaken" required="">
 </textarea>
     <br>
     <br>

@@ -43,7 +43,7 @@
 					<td>" . $row["end_event"] . "</td>
 					<td>"
 						?>
-						<form action="approve_or_decline.php" method="POST">
+						<form action="approve_or_decline_office.php" method="POST">
 							<input type="submit" name="Approve" value="Approve">
 							<input type="submit" name="Decline" value="Decline">
 						</form>
