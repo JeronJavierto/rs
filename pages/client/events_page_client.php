@@ -1,10 +1,18 @@
 <!DOCTYPE html>
+<?php
+	include("../../php/session.php");
+?>
 <html>
 <head>
 	<title>Home</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../../stylesheet/style.css">
 	<h1>FACILITY RESERVATION SYSTEM</h1>
+	<h3>
+	   <?php
+      echo  $login_session," ", $login_lastname;
+   ?>
+</h3>
 	<h3><a href="editProfile.html" class="signup">Edit Profile</a></h3>
 </head>
 <body>

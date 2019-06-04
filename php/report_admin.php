@@ -12,7 +12,13 @@
 <link rel="stylesheet" href="../stylesheet/style.css">
 <link rel="stylesheet" href="../stylesheet/style2.css">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../stylesheet/bootstrap.min.css">
 <h1>FACILITY RESERVATION SYSTEM</h1>
+<h3>
+     <?php
+      echo  $login_session," ", $login_lastname;
+   ?>
+</h3>
 <h3><a href="../../php/logout.php" class="signup">Log Out</a></h3>
 </head>
     <body>

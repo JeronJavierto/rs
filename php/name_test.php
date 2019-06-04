@@ -1,4 +1,4 @@
-<?php
+   <?php
    include('DBConnector.php');
    // session_start();
    
@@ -15,5 +15,20 @@
       header("location: ../index.php");
    }
 
+
+      echo "Name: ", $login_session," ", $login_lastname;
+
+
  
 ?>
+<html>
+<head>
+   <title>
+   </title>
+</head>
+<body>
+
+
+</body>
+
+</html>

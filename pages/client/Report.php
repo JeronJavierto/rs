@@ -57,6 +57,9 @@ input[type=reserve]:hover {
   font-size: 12px;
   cursor: pointer;
 } 
+<?php
+  include("../../php/session.php");
+?>
 
 </style>      
 </head>
