@@ -15,7 +15,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
-
   <script>
    
   $(document).ready(function() {
@@ -32,24 +31,17 @@
     select: function(start, end, allDay)
     {
      var title = prompt("Enter Event Title");
-     if(title)
+     var facility = prompt("Facility");     
+
+     if(title && facility)
      {
-      var start = $.fullCalendar.formatDate(start, "Y-MM-DD HH:mm:ss");
-      var end = $.fullCalendar.formatDate(end, "Y-MM-DD HH:mm:ss");
-      
+      var start = $.fullCalendar.formatDate(start, "Y-MM-DD HH:mm");
+      var end = $.fullCalendar.formatDate(end, "Y-MM-DD HH:mm");
       $.ajax({
        url:"insert_calendar.php",
        type:"POST",
-       data:{title:title, start:start, end:end},
+       data:{title:title, facility:facility, start:start, end:end},
        success:function()
-       eventRender: function(title) {
-      var tooltip = new Tooltip(title.el, {
-        title: title.event.extendedProps.description,
-        placement: 'top',
-        trigger: 'hover',
-        container: 'body'
-      });
-    }
        {
         calendar.fullCalendar('refetchEvents');
         alert("Added Successfully");
@@ -60,8 +52,8 @@
     editable:true,
     eventResize:function(event)
     {
-     var start = $.fullCalendar.formatDate(event.start, "Y-MM-DD HH:mm:ss");
-     var end = $.fullCalendar.formatDate(event.end, "Y-MM-DD HH:mm:ss");
+     var start = $.fullCalendar.formatDate(event.start, "Y-MM-DD HH:mm");
+     var end = $.fullCalendar.formatDate(event.end, "Y-MM-DD HH:mm");
      var title = event.title;
      var id = event.id;
      $.ajax({
@@ -69,14 +61,6 @@
       type:"POST",
       data:{title:title, start:start, end:end, id:id},
       success:function(){
-          eventRender: function(title) {
-      var tooltip = new Tooltip(title.el, {
-        title: title.event.extendedProps.description,
-        placement: 'top',
-        trigger: 'hover',
-        container: 'body'
-      });
-    }
        calendar.fullCalendar('refetchEvents');
        alert('Event Update');
       }
@@ -95,14 +79,6 @@
       data:{title:title, start:start, end:end, id:id},
       success:function()
       {
-            eventRender: function(title) {
-      var tooltip = new Tooltip(title.el, {
-        title: title.event.extendedProps.description,
-        placement: 'top',
-        trigger: 'hover',
-        container: 'body'
-      });
-    }
        calendar.fullCalendar('refetchEvents');
        alert("Event Updated");
       }
@@ -111,7 +87,7 @@
 
     eventClick:function(event)
     {
-     if(confirm("Are you sure you want to remove it?"))
+     if(confirm("Are you sure you want to cancel?"))
      {
       var id = event.id;
       $.ajax({
@@ -120,14 +96,6 @@
        data:{id:id},
        success:function()
        {
-             eventRender: function(title) {
-      var tooltip = new Tooltip(title.el, {
-        title: title.event.extendedProps.description,
-        placement: 'top',
-        trigger: 'hover',
-        container: 'body'
-      });
-    }
         calendar.fullCalendar('refetchEvents');
         alert("Event Removed");
        }
@@ -135,11 +103,12 @@
      }
     },
 
+
+
    });
   });
    
   </script>
-  
  </head>
  <body>
   <br />  
