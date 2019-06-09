@@ -6,12 +6,30 @@ h2{
   font-size: 13px;
   margin-top:-40px;
 }
-h3{
-  margin-left: 600px;
-  font-size: 13px;
-  margin-top:-26px;
+div.logout{
+  margin-left: 1190px;
+  }
+
+div.prof{
+  
+  margin-left: 1190px;
+  margin-top: -50px;
+  margin-bottom: -3px;
+  padding-bottom: 5px;
+
 }
 
+a.signup{
+  font-size: 13px;
+  font-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+h4{
+  margin-left: 1000px;
+  margin-top: -60px;
+}
 ul.menu{
   list-style-type: none;
   margin: 0px;
@@ -830,7 +848,7 @@ i {
 }
 
 .addfB{
-  top: 187px;
+  top: 340px;
   right: 410px;
   padding: 8px 15px;
   background-color: #f2f2f2;
