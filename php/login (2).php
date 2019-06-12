@@ -33,9 +33,6 @@
                   }else {
                      header("location: ../pages/admin/home_admin.php");
                   }
-         }elseif($row['User_type'] == 'super_admin'){
-            header("location: ../pages/super_admin/home_superad.php");
-
          }else{
             header("location: ../pages/client/home_client.php");
          }

@@ -9,20 +9,20 @@
   <link rel="stylesheet" href="../stylesheet/style.css">
   <link rel="stylesheet" href="../stylesheet/bootstrap.min.css">
   <h1>FACILITY RESERVATION SYSTEM</h1>
-  <h3>
-     <?php
-      echo  $login_session," ", $login_lastname;
+  <div class="prof">
+       <?php
+      echo $login_session;
    ?>
-</h3>
-  <h3><a href="logout.php" class="signup">Log Out</a></h3>
+</div>
+<div class="logout"><a href="../../php/logout.php" class="signup">Log Out</a></div>
 </head>
 <body>    
   
   <ul class="menu">
-    <li class="home"><a href="../pages/office/home_office.php" class="home">HOME</a></li>
-    <li class="events"><a class="current" href="event_page_office.php" class="events">EVENTS</a></li>
-    <li class="faci"><a href="list_facilities_office.php" class="faci">FACILITIES</a></li>    
-    <li class="req"><a href="list_of_requests_office.php" class="req">REQUEST</a></li>    
+    <li class="home"><a href="../pages/client/home_client.php" class="home">HOME</a></li>
+    <li class="events"><a class="current" href="event_page_client.php" class="events">EVENTS</a></li>
+    <li class="faci"><a href="list_facilities_client.php" class="faci">FACILITIES</a></li>
+    <li class="faci"><a href="report.php" class="faci">REPORT</a></li>
   </ul>
 
   <table id="customers">

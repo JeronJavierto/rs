@@ -10,58 +10,23 @@
 	<link rel="stylesheet" href="../stylesheet/style.css">
 	<link rel="stylesheet" href="../stylesheet/bootstrap.min.css">
 	<h1>FACILITY RESERVATION SYSTEM</h1>
-	<h3>
-	   <?php
-      echo  $login_session," ", $login_lastname;
+	<div class="prof">
+		   <?php
+      echo $login_session;
    ?>
-</h3>
-	<h3><a href="logout.php" class="signup">Log Out</a></h3>
+</div>
+<div class="logout"><a href="../../php/logout.php" class="signup">Log Out</a></div>
 </head>
 <body>    
   
 	<ul class="menu">
-	  <li class="home"><a href="../pages/admin/home_admin.php" class="home">HOME</a></li>
-	  <li class="events"><a href="event_page_admin.php" class="events">EVENTS</a></li>
-	  <li class="faci"><a class="current" href="list_facilities_admin.php" class="faci">FACILITIES</a></li>
-	  <li class="req"><a href="list_of_requests_admin.php" class="req">REQUEST</a></li>
-	  <li class="rep"><a href="report_admin.php" class="rep">REPORTS</a></li>
-	</ul>
-<br>
-<br>
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="addfB">Add Facility</button>
+	    <li class="home"><a href="../pages/client/home_client.php" class="home">HOME</a></li>
+	    <li class="events"><a href="event_page_client.php" class="events">EVENTS</a></li>
+	    <li class="faci"><a class="current" href="list_facilities_client.php" class="faci">FACILITIES</a></li>
+	    <li class="faci"><a href="report.php" class="faci">REPORT</a></li>
+  </ul>
 
-<div id="id01" class="addfmodal">
-  <form class="addfmodal-content animate" action="add_facility.php" method="POST">
-    <div class="imgcontainer1">
-      <span onclick="document.getElementById('id01').style.display='none'" class="close_addf" title="Close Modal">&times;</span>
-    </div>
-      <p align="center">Fill up the form to add a facility.</p>
-      <hr>
-      <label for="frstn">Level Name</label>
-      <input type="text" placeholder="Enter Level Name" name="level" required>
-
-      <label for="lstn">Room Name</label>
-      <input type="text" placeholder="Enter Room Name" name="room">
-
-      <label for="email">Room Type</label>
-      <input type="text" placeholder="Enter Room Type" name="roomType" required>      
-
-      <label for="org">Description</label>
-      <input type="text" placeholder="Enter Description" name="description" required="">
-
-      <label for="posi">Capacity</label>
-      <input type="text" placeholder="Enter Capacity" name="capacity" required="">     
-
-      <div class="clearfix">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn_login">Cancel</button> 
-        <button type="submit" class="signupbtn">Submit</button>
-      </div>
-    </div>
-  </form>
-</div>
-
-
-<div style="width:700px; margin:0 auto;">
+	<div style="width:700px; margin:0 auto;">
 <br>
 <table class="table table-striped table-bordered">
 <thead>
@@ -184,5 +149,6 @@ if (isset($_GET['page_no']) && $_GET['page_no']!="") {
 		} ?>
 </ul>
 </div>
+
 </body>
 </html>

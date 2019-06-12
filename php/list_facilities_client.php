@@ -10,12 +10,12 @@
 	<link rel="stylesheet" href="../stylesheet/style.css">
 	<link rel="stylesheet" href="../stylesheet/bootstrap.min.css">
 	<h1>FACILITY RESERVATION SYSTEM</h1>
-	<div class="prof">
-		   <?php
-      echo $login_session;
+	<h3>
+	   <?php
+      echo  $login_session," ", $login_lastname;
    ?>
-</div>
-<div class="logout"><a href="../../php/logout.php" class="signup">Log Out</a></div>
+</h3>
+	<h3><a href="logout.php" class="signup">Log Out</a></h3>
 </head>
 <body>    
   
