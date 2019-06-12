@@ -11,7 +11,6 @@ h3{
   font-size: 13px;
   margin-top:-26px;
 }
-
 ul.menu{
   list-style-type: none;
   margin: 0px;
@@ -19,14 +18,10 @@ ul.menu{
   overflow: hidden;
   background-color:#ffcb0c;
   border-style: solid;
+  
 }
 
 
- li.home_index{
-  float: left;
-  margin-right: -450px;
-  margin-left: 420px;
-}
 li.events_index{
   float: left;
   margin-right: -450px;
@@ -37,17 +32,16 @@ li.faci_index{
   margin-right: -450px;
   margin-left: 500px;
 }
-
-h2.calendar_h2{
-  font-size: 30px;
-  margin-left: 80px;
+@media screen and (max-width: 500px) {
+  li.home_index{
+  float: left;
+  margin-right: -450px;
+  margin-left: 420px;
 }
-
-a.calendar_font{
-  color: black;
-  font-style: none;
+  .header-right {
+    float: none;
+  }
 }
- 
 
 li.home{
   float: left;
@@ -155,13 +149,6 @@ li a.rep{
 li a:hover {
   text-decoration: underline;
 }
-.menu .current{
-  text-decoration: underline;
-  color: black;
-  display: block;
-  text-align: center;
-   padding: 14px 16px;
-}
 /* Login Form(Pop-up)*/
 body {font-family: Arial, Helvetica, sans-serif;}
 
@@ -237,7 +224,7 @@ button.loginB {
   padding: 14px 20px;
   position: fixed;
   right: 0;
-  top: 53%;
+  top: 50%;
   width: 8em;
   margin-top: -21em;
   margin-right: 100px;
@@ -365,7 +352,7 @@ button.signupB {
   padding: 14px 20px;
   position: fixed;
   right: 0;
-  top: 53%;
+  top: 50%;
   width: 8em;
   margin-top: -21em;
   margin-right: 11px;
@@ -796,84 +783,3 @@ i {
 .dropdown a:hover {background-color: #ddd;}
 
 .show {display: block;}
-
-/*border for add facilities */
-.div1 {
-  width: 100%;
-  height: 30px;
-  border: 1px solid white;
-  background: white;
-}
-
-#lfadmin {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-
-#lfadmin td, #lfadmin th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-#lfadmin tr:nth-child(even){background-color: #f2f2f2;}
-
-#lfadmin tr:hover {background-color: #ddd;}
-
-#lfadmin th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #4040a1;
-  color: white;
-}
-
-.addfB{
-  top: 187px;
-  right: 410px;
-  padding: 8px 15px;
-  background-color: #f2f2f2;
-  position: absolute;
-}
-
-/* The Modal (background) */
-.addfmodal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 450px;
-  top: 60px;
-  width: 40%; /* Full width */
-  height: 87%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: #778899;
-  padding-top: 2px;
-  border-color: #ffcb0c;
-  border: solid; 
-}
-
-/* Modal Content/Box */
-.addfmodal-content {
-  background-color: #fefefe;
-  margin: 1% auto 0 auto; /* 3% from the top, 0 from the bottom and centered */
-  border: 1px solid #888;
-  width: 99%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button for add facility (x) */
-.close_addf {
-  position: absolute;
-  right: 10px;
-  top: -15px;
-  color: #000;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-
-.close_addf:hover,
-.close_addf:focus {
-  color: red;
-  cursor: pointer;
-}
