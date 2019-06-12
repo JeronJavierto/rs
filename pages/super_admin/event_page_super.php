@@ -25,6 +25,7 @@
     <li class="faci"><a class="current" href="list_facilities_super.php" class="faci">FACILITIES</a></li>
     <li class="req"><a href="list_of_requests_super.php" class="req">REQUEST</a></li>
     <li class="rep"><a href="report_super.php" class="rep">REPORTS</a></li>
+    <li class="acc"><a href="super_signup.php" class="acc">ACCOUNTS</a></li>
   </ul>
 
   <table id="customers">

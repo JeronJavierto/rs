@@ -7,7 +7,7 @@
 	
  
 
-	<title>Super Admin Homepage</title>
+	<title>Roles and Privileges</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../../stylesheet/style.css">
 	<link rel="stylesheet" href="../stylesheet/bootstrap.min.css">
@@ -28,10 +28,9 @@
 	  <li class="faci"><a class="current" href="list_facilities_super.php" class="faci">FACILITIES</a></li>
 	  <li class="req"><a href="list_of_requests_super.php" class="req">REQUEST</a></li>
 	  <li class="rep"><a href="report_super.php" class="rep">REPORTS</a></li>
-	  <li class="acc"><a href="super_signup.php" class="acc">ACCOUNTS</a></li>
 	</ul>
 
-	<?php include("homepage_super_calendar.php"); ?>
+
 
 	
 </body>

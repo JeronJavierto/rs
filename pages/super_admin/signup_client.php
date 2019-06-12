@@ -1,5 +1,5 @@
 <?php
-	include('DBConnector.php');
+	include('../../php/DBConnector.php');
 
 	$Fname = mysqli_real_escape_string($conn, $_REQUEST['FName']);
 	$Lname = mysqli_real_escape_string($conn, $_REQUEST['LName']);

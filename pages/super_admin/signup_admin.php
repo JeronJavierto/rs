@@ -1,5 +1,5 @@
 <?php
-include('DBConnector.php');
+include('../../php/DBConnector.php');
 
 $fname = mysqli_real_escape_string($conn, $_REQUEST['admin_FName']);
 $lname = mysqli_real_escape_string($conn, $_REQUEST['admin_LName']);
@@ -24,14 +24,14 @@ $officeArray = array("SSD", "Student Affairs Office", "Security Office");
 		if(mysqli_num_rows($result)>0){
 			// header("location: ../index.php");
 			echo "<script type='text/javascript'>alert('$message');
-				window.location.href='../index.php';
+				window.location.href='../../index.php';
 			</script>";
 
 
 
 		}elseif ($password != $ConPassword){			
 			echo "<script type='text/javascript'>window.alert('Passwords do not match');
-				window.location.href='../index.php';
+				window.location.href='../../index.php';
 			</script>";
 			
 				
@@ -39,11 +39,11 @@ $officeArray = array("SSD", "Student Affairs Office", "Security Office");
 			for ($i=0; $i < count($officeArray); $i++) {
 				if ($office == $officeArray[$i]) {
 					echo "<script type='text/javascript'>alert('User successfully Created');
-					window.location.href='../pages/office/home_office.php';</script>";
+					window.location.href='../office/home_office.php';</script>";
 				}
 			}
-			echo "<script type='text/javascript'>alert('User successfully Created');
-			window.location.href='../pages/admin/home_admin.php';</script>";			
+			echo "<script type='text/javascript'>alert('User successfully Created')";	
+			echo "hi";
 		}
 	}
 ?>
