@@ -6,10 +6,19 @@ h2{
   font-size: 13px;
   margin-top:-40px;
 }
-h3{
-  margin-left: 1170px;
-  font-size: 13px;
-  margin-top:-26px;
+
+div.logout{
+  margin-left: 1190px;
+  color: black;
+  }
+
+div.prof{
+  
+  margin-left: 1190px;
+  margin-top: -50px;
+  margin-bottom: -3px;
+  padding-bottom: 5px;
+
 }
 
 ul.menu{
