@@ -289,7 +289,7 @@ span.psw {
   left: 350px;
   top: 120px;
   width: 50%; /* Full width */
-  height: 50%; /* Full height */
+  height: 358px; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: #778899;
   border-color: #ffcb0c;
