@@ -854,7 +854,7 @@ i {
   width: 40%; /* Full width */
   height: 80%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: #778899;
+  background-color: #fefefe;
   border-color: #ffcb0c;
   border: solid; 
 }
