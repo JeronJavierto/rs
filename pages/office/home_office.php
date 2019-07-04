@@ -8,7 +8,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../../stylesheet/style.css">	
 	<link rel="stylesheet" href="../stylesheet/bootstrap.min.css">
+	<br>
+	<br>
 	<h1>FACILITY RESERVATION SYSTEM</h1>
+	  <a href="../../index.php">
+    <img src="../../images/final logo.png" alt="final-logo">
+  </a>
 	<div class="prof">
 		   <?php
       echo $login_session;

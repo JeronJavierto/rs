@@ -9,7 +9,12 @@
 	<title>List of Facilities</title>
 	<link rel="stylesheet" href="../stylesheet/style.css">
 	<link rel="stylesheet" href="../stylesheet/bootstrap.min.css">
+	<br>
+	<br>
 	<h1>FACILITY RESERVATION SYSTEM</h1>
+	  <a href="../index.php">
+    <img src="../images/final logo.png" alt="final-logo">
+  </a>
 	<h3>
 	   <?php
       echo  $login_session," ", $login_lastname;
