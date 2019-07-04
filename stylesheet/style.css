@@ -1,5 +1,6 @@
 h1{
   text-align: center;
+  margin-top: 30px;
 }
 h2{
   margin-left: 1100px;
@@ -29,9 +30,13 @@ ul.menu{
   background-color:#ffcb0c;
   border-style: solid;
 }
+img{
+    margin-top: -96px;
+    width: 137px;
+    margin-left: 11px;
+}
 
-
- li.home_index{
+li.home_index{
   float: left;
   margin-right: -450px;
   margin-left: 420px;
