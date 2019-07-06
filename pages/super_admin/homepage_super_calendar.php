@@ -19,28 +19,39 @@
    
   $(document).ready(function() {
    var calendar = $('#calendar').fullCalendar({
+    eventLimit: true,
+    navLinks: true,
+    nowIndicator: true,
+    windowResize: function(view) {
+    },
+    businessHours: {          
+        daysOfWeek: [ 1, 2, 3, 4, 5, 6 ], 
+        startTime: '8:00', 
+        endTime: '18:00', 
+    },
     editable:true,
     header:{
      left:'prev,next today',
      center:'title',
      right:'month,agendaWeek,agendaDay'
-    },
+    },    
     events: 'load_calendar.php',
     selectable:true,
     selectHelper:true,
     select: function(start, end, allDay)
     {
-     var title = prompt("Enter Event Title");
-     var facility = prompt("Facility");     
+     var title = prompt("Enter Event Name:");
+     var facility = prompt("Facility: ");
+     var participants = prompt("Estimated participants: ");
 
-     if(title && facility)
+     if(title && facility && participants)
      {
       var start = $.fullCalendar.formatDate(start, "Y-MM-DD HH:mm");
       var end = $.fullCalendar.formatDate(end, "Y-MM-DD HH:mm");
       $.ajax({
        url:"insert_calendar.php",
        type:"POST",
-       data:{title:title, facility:facility, start:start, end:end},
+       data:{title:title, facility:facility, participants:participants, start:start, end:end},
        success:function()
        {
         calendar.fullCalendar('refetchEvents');
@@ -66,45 +77,6 @@
       }
      })
     },
-
-    eventDrop:function(event)
-    {
-     var start = $.fullCalendar.formatDate(event.start, "Y-MM-DD HH:mm:ss");
-     var end = $.fullCalendar.formatDate(event.end, "Y-MM-DD HH:mm:ss");
-     var title = event.title;
-     var id = event.id;
-     $.ajax({
-      url:"update_calendar.php",
-      type:"POST",
-      data:{title:title, start:start, end:end, id:id},
-      success:function()
-      {
-       calendar.fullCalendar('refetchEvents');
-       alert("Event Updated");
-      }
-     });
-    },
-
-    eventClick:function(event)
-    {
-     if(confirm("Are you sure you want to cancel?"))
-     {
-      var id = event.id;
-      $.ajax({
-       url:"delete_calendar.php",
-       type:"POST",
-       data:{id:id},
-       success:function()
-       {
-        calendar.fullCalendar('refetchEvents');
-        alert("Event Removed");
-       }
-      })
-     }
-    },
-
-
-
    });
   });
    
